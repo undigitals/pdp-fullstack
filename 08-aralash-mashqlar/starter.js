@@ -3,53 +3,97 @@
 
 // 1-masala (arifmetik operatorlar)
 function celsiusToFahrenheit(c) {
-  // Shu yerga yozing
+  return c * 9 / 5 + 32
 }
 
 // 2-masala (% va &&)
 function isDivisibleBy(n, a, b) {
-  // Shu yerga yozing
+  return n % a == 0 && n % b == 0 ? true : false
 }
 
 // 3-masala (if / ternary)
 function clamp(n, min, max) {
-  // Shu yerga yozing
+    return n < min ? min : n > max ? max : n
 }
 
 // 4-masala (for...of)
 function countChar(text, char) {
-  // Shu yerga yozing
+  let count = 0;
+  for(let i = 0; i < text.length; i++) {
+    if(text[i] === char) count++
+  }
+  return count
 }
 
 // 5-masala (for...of + if)
 function evenOddSums(numbers) {
-  // Shu yerga yozing
+   let evenSum = 0;
+  let oddSum = 0;
+  for(num of numbers) {
+    num % 2 == 0 ? evenSum += num : oddSum += num
+  }
+  return {
+    even: evenSum,
+    odd: oddSum
+  }
 }
 
 // 6-masala (if zanjiri)
 function ticketPrice(age, isStudent) {
-  // Shu yerga yozing
+   if(age < 5) {
+        return 0
+    } else if(age <= 12) {
+        return 5000
+    } else if (age > 12 && age < 65 && isStudent) {
+        return 8000 
+    }
+      else if (age >= 65) {
+       return 6000
+    } else return 12000
 }
 
 // 7-masala (formula + if zanjiri)
 function bmiCategory(weightKg, heightM) {
-  // Shu yerga yozing
+  let bmi =  weightKg / heightM ** 2
+    return bmi < 18.5 ? 'kam vazn' : 
+    bmi >= 18.5 && bmi <= 24.99 ? "normal" :
+    bmi >= 25 && bmi <= 29.99 ? 'ortiqcha vazn' : 'semizlik'
 }
 
 // 8-masala (for + if)
 function wordCount(sentence) {
-  // Shu yerga yozing
+  let count = 0
+    for(char of sentence) {
+        if(char == ' ') count++
+    }
+    return count
 }
 
 // 9-masala (for + kabisa yil sharti)
 function leapYearsBetween(from, to) {
-  // Shu yerga yozing
+   let count = 0;
+
+    for (let year = from; year <= to; year++) {
+        if (
+            (year % 4 === 0 && year % 100 !== 0) ||
+            year % 400 === 0
+        ) {
+            count++;
+        }
+    }
+
+    return count;
 }
 
 // 10-masala (for + %)
 function isPerfectNumber(n) {
-  // Shu yerga yozing
+  let result = 0;
+  for(let i = 1; i < n; i++) {
+    if(n % i == 0) count += i
+  }
+  console.log(count)
 }
+isPerfectNumber(6)
 
 // 11-masala (while + % va Math.floor)
 function numberToBinary(n) {
