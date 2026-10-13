@@ -7,6 +7,7 @@ Fullstack JavaScript kursi uchun topshiriqlar reposi.
 | Papka | Mavzu |
 | --- | --- |
 | [08-aralash-mashqlar](08-aralash-mashqlar) | Aralash takrorlash: operatorlar, shartlar, o'zgaruvchilar, tsikllar (16 ta masala) |
+| [12-github](12-github) | GitHub: repo, fork, Pull Request, kod ko'rigi, konfliktlar |
 
 ## Topshiriqni qanday topshirish kerak (PR orqali)
 
