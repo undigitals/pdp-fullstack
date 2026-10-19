@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM mashqlari — testlar</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+      h1 { font-size: 1.4rem; }
+      #xulosa { font-weight: 600; margin: 1rem 0; }
+      ul#natijalar { list-style: none; padding: 0; }
+      #natijalar li { padding: .5rem .75rem; border-radius: 6px; margin-bottom: .4rem; background: #f4f4f5; }
+      #natijalar li.otdi::before { content: "✓ "; color: #15803d; font-weight: 700; }
+      #natijalar li.yiqildi { background: #fef2f2; }
+      #natijalar li.yiqildi::before { content: "✗ "; color: #b91c1c; font-weight: 700; }
+      #natijalar small { display: block; color: #b91c1c; margin-top: .25rem; font-family: ui-monospace, monospace; }
+      #xato { background: #fef2f2; color: #b91c1c; padding: .75rem; border-radius: 6px; display: none; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h1>DOM mashqlari</h1>
+    <p><code>starter.js</code> ni o'zgartiring, saqlang va bu sahifani yangilang (<kbd>F5</kbd>).</p>
+    <div id="xato"></div>
+    <div id="xulosa">Testlar ishlamoqda…</div>
+    <ul id="natijalar"></ul>
+
+    <div id="sandbox" style="display: none"></div>
+
+    <script src="starter.js"></script>
+    <!-- <script src="tests.js"></script> -->
+  </body>
+</html>

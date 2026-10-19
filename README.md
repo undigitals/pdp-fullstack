@@ -7,6 +7,7 @@ Fullstack JavaScript kursi uchun topshiriqlar reposi.
 | Papka | Mavzu |
 | --- | --- |
 | [08-aralash-mashqlar](08-aralash-mashqlar) | Aralash takrorlash: operatorlar, shartlar, o'zgaruvchilar, tsikllar (16 ta masala) |
+| [09-dom](09-dom) | DOM va hodisalar: 17 ta masala, brauzerda avtomatik tekshiruv (index.html) |
 | [10-git](10-git) | Git amaliy mashqlari: commit, branch, merge, konflikt, rebase, stash (15 ta, avtomatik tekshiruv) |
 | [11-bash](11-bash) | Bash skriptlash: 16 ta masala, avtomatik tekshiruv |
 | [12-github](12-github) | GitHub: repo, fork, Pull Request, kod ko'rigi, konfliktlar |
